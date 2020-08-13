@@ -90,6 +90,8 @@ body .container .formulaire input[type=text] {
   height: 60px;
   border-radius: 50px;
   border: none;
+  outline: none;
+  padding:1%;
 }
 body .container .formulaire input[type=submit] {
   width: calc(29% - 20px);
@@ -98,6 +100,7 @@ body .container .formulaire input[type=submit] {
   border-radius: 50px;
   padding: 15px 30px;
   border: none;
+  outline: none;
 }
 body .ajout {
   justify-content: center;
@@ -156,3 +159,4 @@ body .egg figure {
     margin: 0;
   }
 }
+
