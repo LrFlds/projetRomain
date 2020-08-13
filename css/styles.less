@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+//-----LESS:    width: ~"calc(50% - 20px)";
+//-----CSS:    width: calc(50% - 20px);
+
+* {
+    box-sizing: border-box;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+div, header, section, footer, aside, nav, main, article, figure, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img { 
+	margin: 0;
+	padding: 0;
+}
+img, object, embed, canvas, video, audio, picture, svg {
+	max-width: 100%;
+	height: auto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+@keyframes animate {
+    0%{
+        background-position: 0;
+    }
+     100%{
+        background-position: 1360px;
+    }
+}
+@keyframes animate-reverse {
+    0%{
+        background-position:  1360px;
+    }
+     100%{
+        background-position: 0;
+    }
+}
+
+.container{
+    width: 100%;
+height: auto;
+background-color: rgb(43, 171, 199);
+padding-bottom: 50px;
+.formulaire{
+    width: 100%;
+    height: 80px;
+    input[type = text]{
+        width: ~"calc(70% - 20px)";
+        margin:10px;
+            height: 60px;
+            border-radius : 50px;
+            border: none;
+
+    }
+    input[type = submit] {
+        width: ~"calc(29% - 20px)";
+        margin: 10px;
+      height: 60px;
+      border-radius : 50px;
+      padding: 15px 30px;
+      border: none;
+    }
+}
+}
+.ajout{
+        width: 100%;
+        justify-content : center;
+        align-items : center;
+        background-color: rgb(43, 171, 199);
+        // border-top: solid 2px rgb(43, 171, 199) ;
+        position: relative;
+        width: 100%;
+        height: 143px;
+        background-image: url(../imgs/wave.png);
+        animation: animate 10s linear infinite;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: url(../imgs/wave.png);
+            width: 100%;
+            height: 143px;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            animation: animate-reverse 10s linear infinite;
+            
+        }
+    
+    .icon{
+        height: 30px;
+        width : 30px ;
+        background-color: rgb(43, 171, 199);
+        position: absolute;
+        top: 180px;
+       
+
+        i{
+            font-size: 20px;
+            color: white; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+
+}
+
+.egg{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    figure{
+        height: 100px;
+        width: 100px;
+        background-image: url(../imgs/png-clipart-nemo-gulls-drawing-gull-animals-bird-thumbnail.png) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+}
+
+
+/* ------------------------ MEDIA QUERIES 960px ---- */
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+}
+}
