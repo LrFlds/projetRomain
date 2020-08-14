@@ -18,8 +18,10 @@ function addNewInput(id){
 for(i=0; i < nbInputs; i++){  // on exécute la fonction au lancement de la page autant de fois qu'il y a d'inputs dans le local storage
     addNewInput(i+1);
 }
+let audio = new Audio('imgs/mouette.mp3');
 addButton.addEventListener('click', (event) => { // bouton qui ajoute un input
     addNewInput(nbInputs+1); // on défini le paramètre pour faire correspondre le chiffre dans la clef du storage
     nbInputs++; // on ajoute 1 au nombre d'inputs
     localStorage.setItem('nbInputs',nbInputs); //on met à jour la valeur du storage
+    audio.play();
 });
